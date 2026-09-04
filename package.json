@@ -9,7 +9,7 @@
   "packageManager": "npm@11.19.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node -e \"console.log('SUPABASE SSR:', require.resolve('@supabase/ssr'))\" && next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
